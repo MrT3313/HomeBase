@@ -5,15 +5,22 @@ Lambda WebPT4
 <br>
 
 # WHY
-My goal with this project is to demonstrate my budding capabilities as a developer. 
+Project Goals:
+    1) Demonstrate my budding 'full stack' capabilities as a developer
+    2) Learn good documentation methods / techniques
+    3) Document the evolution of the project from end to end 
 
 <br>
 
-# Stack
+# Built With
 
 ## Front End
--React
--Redux
+Main <br>
+[React](https://reactjs.org/) - UI Framework <br>
+[Redux](https://redux.js.org/) - UI Data Storage <br>
+
+Styling <br>
+[Styled Components](https://www.styled-components.com/) - React Component Styling 
 
 ## Back End
 
