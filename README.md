@@ -61,9 +61,9 @@ We are currently in **V1**
 
 # Dates
 
-V0Started: 5/26/19
-V0 Completed: 5/26/19
-V1 Started: 5/27/19
+V0Started: 5/26/19 <br>
+V0 Completed: 5/26/19 <br>
+V1 Started: 5/27/19 <br>
 
 
 
