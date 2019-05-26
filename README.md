@@ -35,7 +35,7 @@ Styling <br>
 
 # Development
 
-We are currently in **V0** --> AKA I am planning and besides this read me there is nothing!!
+We are currently in **V1** --> AKA I am planning and besides this read me there is nothing!!
 
 ## V1
     FE:
