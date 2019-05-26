@@ -35,7 +35,7 @@ Styling <br>
 
 # Development
 
-We are currently in **V1** --> AKA I am planning and besides this read me there is nothing!!
+We are currently in **V1**
 
 ## V1
     FE:
@@ -58,6 +58,12 @@ We are currently in **V1** --> AKA I am planning and besides this read me there 
     <ToDoList />
     <TimeTracking />
 
+
+# Dates
+
+V0Started: 5/26/19
+V0 Completed: 5/26/19
+V1 Started: 5/27/19
 
 
 
