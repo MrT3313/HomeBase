@@ -24,6 +24,7 @@ Styling <br>
 ### Design 0:
 <img src='/readMe_imgs/HomeBase_Desktop_Design0.png' height='600'>
 
+
 # Back End
 [SQLite](https://www.sqlite.org/index.html) - Database Engine <br>
 
