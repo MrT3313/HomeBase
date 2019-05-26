@@ -37,25 +37,25 @@ Styling <br>
 We are currently in **V0** --> AKA I am planning and besides this read me there is nothing!!
 
 ## V1
-    FE: <br>
+    FE:
         Create-React-App
-    BE: <br>
+    BE:
         N.A. 
 
 ## V1.1
-    FE: <br>
-        <Header /> <br>
-        <Footer /> <br>
+    FE:
+        <Header />
+        <Footer />
     BE:
         SQLite <br>
 
 ## V1.2
-    <WeeklyObjectives /> <br>
-    <Projects /> <br>
+    <WeeklyObjectives />
+    <Projects />
 
 ## V1.3   
-    <ToDoList /> <br>
-    <TimeTracking /> <br>
+    <ToDoList />
+    <TimeTracking />
 
 
 
