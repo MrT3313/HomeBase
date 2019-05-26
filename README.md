@@ -21,7 +21,7 @@ Styling <br>
 [Styled Components](https://www.styled-components.com/) - React Component Styling 
 
 ## FE Design Images
-### Design 0:
+### FE Design 0:
 <img src='/readMe_imgs/HomeBase_Desktop_Design0.png' height='600'>
 
 
@@ -29,7 +29,7 @@ Styling <br>
 [SQLite](https://www.sqlite.org/index.html) - Database Engine <br>
 
 ## BE Design Images
-### Design 0:
+### BEDesign 0:
 <img src='/readMe_imgs/HomeBase_DB_Design0.png' height='600'>
 
 
@@ -61,9 +61,9 @@ We are currently in **V1**
 
 # Dates
 
-V0Started: 5/26/19 <br>
-V0 Completed: 5/26/19 <br>
-V1 Started: 5/27/19 <br>
+V0 - Started: 5/26/19   <br>
+V0 - Completed: 5/26/19 <br>
+V1 - Started: 5/27/19   <br>
 
 
 
