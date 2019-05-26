@@ -35,7 +35,11 @@ Styling <br>
 
 # Development
 
-We are currently in **V1**
+We are currently in **V1.1**
+
+## V0
+    Ideation / Design
+    Initial ReadMe
 
 ## V1
     FE:
@@ -63,7 +67,13 @@ We are currently in **V1**
 
 V0 - Started: 5/26/19   <br>
 V0 - Completed: 5/26/19 <br>
-V1 - Started: 5/27/19   <br>
+<br>
+
+V1 - Started: 5/26/19   <br>
+V1 - Completed: 5/26/19   <br>
+
+<br>
+V1.2 - Started: 5/27/19   <br>
 
 
 
