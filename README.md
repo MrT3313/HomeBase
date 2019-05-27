@@ -40,6 +40,7 @@ N.A.
 ### BE Design Links
 [Current WireFrame - https://dbdiagram.io](https://dbdiagram.io/d/5ceb10e51f6a891a6a65767e) <br>
 - [BE Design_0](readMe_files/imgs/HomeBase_DB_Design0.png)
+- [BE Design_1](readMe_files/imgs/homeBase_DB_V1.1_Design_1.png)
 
 ### BE Current Design:
 <img src='/readMe_files/imgs/HomeBase_DB_Design0.png' height='600'>
