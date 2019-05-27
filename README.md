@@ -11,8 +11,6 @@ Project Goals: <br>
 <br>
 
 # Development Progress
-
-We are currently in **V1.1** <br> <br>
 *Click The Version Title To See More Details*
 
 Version | [V0](readMe_docs/V0.md) | [V1](readMe_docs/V1.md) | [V1.1](readMe_docs/V1_1.md)
@@ -30,6 +28,7 @@ Styling <br>
 
 ## FE Design Images
 ### FE Design 0:
+[FE WireFrame](https://www.figma.com/file/VzYaSTnsQxXCjXJ0VlFm14Kl/Home-Plate?node-id=0%3A1)
 <img src='/readMe_imgs/HomeBase_Desktop_Design0.png' height='600'>
 
 
@@ -38,6 +37,7 @@ Styling <br>
 
 ## BE Design Images
 ### BE Design 0:
+[BE WireFrame](https://dbdiagram.io/d/5ceb10e51f6a891a6a65767e)
 <img src='/readMe_imgs/HomeBase_DB_Design0.png' height='600'>
 
 
