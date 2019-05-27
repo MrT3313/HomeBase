@@ -9,6 +9,7 @@
 
 // INITIAL STATE
     const initialState = {
+        // **!!** FAKE VERSION **!!**
         currentUserID: 1,
         
         is_LoggingIn: false,
@@ -31,12 +32,6 @@ export const r_login = (state = initialState, action) => {
         case LOGIN_SUCCESS:
             return {
                 ...state,
-
-                // REAL VERSION
-                    // take data off action.payload
-                
-                // FAKE VERSION
-                    // currentUserID: 1,
 
                 is_LoggingIn: false,
                 error:''

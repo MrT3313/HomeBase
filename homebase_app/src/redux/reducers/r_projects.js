@@ -17,22 +17,31 @@ const initialState = {
 
 // REDUCER
 export const r_projects = (state = initialState, action) => {
-    
+
     switch(action.type) {
         // -1- // GETTING PROJECTS
             case GET_PROJECTS_START:
                 return {
-                    ...state
-
+                    ...state,
+                    
+                    is_gettingProjects: true,
+                    error: ''
                 }
             case GET_PROJECTS_SUCCESS:
                 return {
-                    ...state
+                    ...state,
+
+                    is_gettingProjects: false,
+                    projects: action.payload,
+                    error: ''
 
                 }
             case GET_PROJECTS_FAILURE:
                 return {
-                    ...state
+                    ...state,
+
+                    is_gettingProjects: false,
+                    error: 'unable to get projects'
 
                 }
 

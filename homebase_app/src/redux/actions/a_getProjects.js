@@ -10,8 +10,9 @@
     export const GET_PROJECTS_FAILURE = "GET_PROJECTS_FAILURE"
 
 // ACTION CREATOR
-export const getProjects = () => {
+export const getProjects = (currentUser) => {
     console.log('getProjects Action Creator')
+    console.log(currentUser)
 
     // SEND FIRST ACTION
     return dispatch => {
@@ -19,7 +20,7 @@ export const getProjects = () => {
 
         // START AXIOS CALL
         axios
-            .get('http://localhost:5000')
+            .get(`http://localhost:5000/api/projects/user/${currentUser}`)
                 .then( result => {
                     console.log(result)
 
