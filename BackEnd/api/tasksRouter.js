@@ -12,7 +12,7 @@ const express = require('express')
     router.get('/', async (req,res) => {
         console.log('tasksRouter GET/')
 
-        DB_knexVersion('todos')
+        DB_knexVersion('tasks')
             .then( tasks => {
                 res.status(200).json(tasks)
             })
