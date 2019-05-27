@@ -27,10 +27,10 @@ Styling <br>
 [Styled Components](https://www.styled-components.com/) - React Component Styling 
 
 ## FE Design Links
-[Design_0 - https://www.figma.com](https://www.figma.com/file/VzYaSTnsQxXCjXJ0VlFm14Kl/Home-Plate?node-id=0%3A1) <br>
+[Current DESKTOP WireFrame - https://www.figma.com](https://www.figma.com/file/VzYaSTnsQxXCjXJ0VlFm14Kl/Home-Plate?node-id=0%3A1) <br>
 
 ### FE Current Design:
-N.A.
+<img src='/readMe_files/imgs/HomeBase_Desktop_Design0.png' height='600'>
 
 
 
@@ -38,10 +38,10 @@ N.A.
 [SQLite](https://www.sqlite.org/index.html) - Database Engine <br>
 
 ## BE Design Links
-[BE WireFrame - https://dbdiagram.io](https://dbdiagram.io/d/5ceb10e51f6a891a6a65767e) <br>
+[Current WireFrame - https://dbdiagram.io](https://dbdiagram.io/d/5ceb10e51f6a891a6a65767e) <br>
 
 ### BE Current:
-<img src='/readMe_imgs/HomeBase_DB_Design0.png' height='600'>
+<img src='/readMe_files/imgs/HomeBase_DB_Design0.png' height='600'>
 
 
 
