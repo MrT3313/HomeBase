@@ -36,6 +36,13 @@ N.A.
 # BACK END
 - Main <br>
 [SQLite](https://www.sqlite.org/index.html) - Database Engine <br>
+[Knex](https://knexjs.org/) - SQL Query Builder <br>
+[Express](https://knexjs.org/) - Node.js Web Application Framework <br>
+[Helmet](https://helmetjs.github.io/) - Protects HTTP Headers <br>
+
+- Dev Dependencies
+[Nodemon](https://nodemon.io/) - Server Restart onSave() <br>
+
 
 ### BE Design Links
 [Current WireFrame - https://dbdiagram.io](https://dbdiagram.io/d/5ceb10e51f6a891a6a65767e) <br>

@@ -89,6 +89,24 @@ const express = require('express')
             })
 })
 // - DELETE - //
+    router.delete('/:id', async (req,res) => {
+        console.log("projectsRouter DELETE/:id")
+        const { id } = req.params
+
+        DB_knexVersion('projects')
+            .where('projectID', id)
+            .del()
+                .then( results => {
+                    if (results) {
+                        res.status(200).json(results)
+                    } else {
+                        res.status(404).json({ error: `DELETE/:id --> projectID ${id} not found`})
+                    }
+                })
+                .catch( () => {
+                    res.status(500).json({error: 'DELETE/:id --> could not delete project'})
+                })
+    })
 
 // EXPORTS
     module.exports = router

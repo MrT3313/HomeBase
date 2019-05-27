@@ -85,7 +85,7 @@ const express = require('express')
     })
 // - DELETE - //
     router.delete('/:id', async (req,res) => {
-        console.log("taskssRouter DELETE/:id")
+        console.log("tasksRouter DELETE/:id")
         const { id } = req.params
 
         DB_knexVersion('tasks')
