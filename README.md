@@ -43,7 +43,7 @@ N.A.
 - [BE Design_1](readMe_files/imgs/homeBase_DB_V1.1_Design_1.png)
 
 ### BE Current Design:
-<img src='/readMe_files/imgs/HomeBase_DB_Design0.png' height='600'>
+<img src='/readMe_files/imgs/homeBase_DB_V1.1_Design_1.png' height='600'>
 
 
 
