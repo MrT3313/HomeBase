@@ -6,6 +6,10 @@ import React, { Component } from "react"
 
 // IMPORT  STYLED COMPONENTS
     import styled from 'styled-components'
+    import { ThemeProvider } from 'styled-components'
+
+    // IMPORT - STYLED COMPONENTS - INDIVIDUAL THEMES
+        import theme from '../styles/footer_homepage'
 
 // -- *** -- START CODE -- *** -- //
 // -- *** -- START CODE -- *** -- //
@@ -13,15 +17,21 @@ import React, { Component } from "react"
 // Styled Components
     const FooterContainer = styled.div`
         display: flex;
+
+        background-color: ${props => props.theme.backgroundColor};
+        color: ${props => props.theme.fontColor};
     `;
 
 class Footer extends Component {
 
     render() {
         return (
-            <FooterContainer>
-                FOOTER
-            </FooterContainer>
+            <ThemeProvider theme={theme}>
+                <FooterContainer>
+                    FOOTER
+                </FooterContainer>
+            </ThemeProvider>
+
         )
     }
 }

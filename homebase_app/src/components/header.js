@@ -6,22 +6,31 @@
 
 // IMPORT STYLED COMPONENTS
     import styled from 'styled-components'
+    import { ThemeProvider } from 'styled-components'
+
+    // IMPORT - STYLED COMPONENTS - INDIVIDUAL THEMES
+        import theme from '../styles/header_homepage'
 
 // -- *** -- START CODE -- *** -- //
 // -- *** -- START CODE -- *** -- //
 
-// Styled Components
+// Styled Components - COMPONENT
     const HeaderContainer = styled.div`
         display: flex;
+        
+        background-color: ${props => props.theme.backgroundColor};
+        color: ${props => props.theme.fontColor};
     `;
 
 class Header extends Component {
 
     render() {
         return (
-            <HeaderContainer>
-                HEADER
-            </HeaderContainer>
+            <ThemeProvider theme={theme}>
+                <HeaderContainer>
+                    HEADER
+                </HeaderContainer>
+            </ThemeProvider>
         )
     }
 }
