@@ -13,7 +13,7 @@ const express = require('express')
         console.log('todosRouter GET/')
 
         DB_knexVersion('todos')
-            .then( objectives => {
+            .then( todos => {
                 res.status(200).json(todos)
             })
             .catch( () => {
