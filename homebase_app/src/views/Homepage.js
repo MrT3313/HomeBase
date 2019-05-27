@@ -8,7 +8,7 @@
     import Header from '../components/Header'
     import Footer from '../components/Footer'
 
-// IMPORT STYLED COMPOENNTS
+// IMPORT STYLED COMPONENTS
     import styled from 'styled-components'
 
 // -- *** -- START CODE -- *** -- //
