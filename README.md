@@ -13,10 +13,10 @@ Lambda WebPT4
 # Development Progress
 *Click The Version Title To See More Details*
 
-Version | [V0](readMe_files/docs/V0.md) | [V1](readMe_files/docs/V1.md) | [V1.1](readMe_files/docs/V1_1.md)
+Version | [V0](readMe_files/docs/V0.md) | [V1](readMe_files/docs/V1.md) | [V1.1](readMe_files/docs/V1_1.md) | [V2.1](readMe_files/docs/V2_1.md)
 --- | --- | --- | ---
-Date Started  | 5/26/19 | 5/26/19 | 5/26/19 
-Date Completed  | 5/26/19 | 5/26/19 | n.a. 
+Date Started  | 5/26/19 | 5/26/19 | 5/26/19 | 6/27/19
+Date Completed  | 5/26/19 | 5/26/19 | 5/27/19 | N.A. 
 
 # FRONT END
 - Main <br>
@@ -40,7 +40,7 @@ N.A.
 [Express](https://knexjs.org/) - Node.js Web Application Framework <br>
 [Helmet](https://helmetjs.github.io/) - Protects HTTP Headers <br>
 
-- Dev Dependencies
+- Dev Dependencies <br>
 [Nodemon](https://nodemon.io/) - Server Restart onSave() <br>
 
 
