@@ -3,7 +3,7 @@ Created By: Reed Turgeon <br>
 Lambda WebPT4
 
 # WHY
-Project Goals: <br>
+- Project Goals: <br>
     1) Demonstrate my budding 'full stack' capabilities as a developer <br>
     2) Learn good documentation methods / techniques <br>
     3) Document the evolution of the project from end to end <br>
@@ -19,11 +19,11 @@ Date Started  | 5/26/19 | 5/26/19 | 5/27/19
 Date Completed  | 5/26/19 | 5/26/19 | n.a. 
 
 # BUILD INFO - Front End
-Main <br>
+- Main <br>
 [React](https://reactjs.org/) - UI Framework <br>
 [Redux](https://redux.js.org/) - UI Data Storage <br>
 
-Styling <br>
+- Styling <br>
 [Styled Components](https://www.styled-components.com/) - React Component Styling 
 
 ## FE Design Links
@@ -34,6 +34,7 @@ Styling <br>
 N.A.
 
 # BUILD INFO - Back End
+- Main <br>
 [SQLite](https://www.sqlite.org/index.html) - Database Engine <br>
 
 ## BE Design Links
