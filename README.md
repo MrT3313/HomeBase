@@ -10,7 +10,17 @@ Project Goals: <br>
 
 <br>
 
-# Front End
+# Development Progress
+
+We are currently in **V1.1** <br> <br>
+*Click The Version Title To See More Details*
+
+Version | [V0](readMe_docs/V0.md) | [V1](readMe_docs/V1.md) | [V1.1](readMe_docs/V1_1.md)
+--- | --- | --- | ---
+Date Started  | 5/26/19 | 5/26/19 | 5/27/19 
+Date Completed  | 5/26/19 | 5/26/19 | n.a. 
+
+# BUILD INFO - Front End
 Main <br>
 [React](https://reactjs.org/) - UI Framework <br>
 [Redux](https://redux.js.org/) - UI Data Storage <br>
@@ -23,23 +33,13 @@ Styling <br>
 <img src='/readMe_imgs/HomeBase_Desktop_Design0.png' height='600'>
 
 
-# Back End
+# BUILD INFO - Back End
 [SQLite](https://www.sqlite.org/index.html) - Database Engine <br>
 
 ## BE Design Images
 ### BE Design 0:
 <img src='/readMe_imgs/HomeBase_DB_Design0.png' height='600'>
 
-
-# Development
-
-We are currently in **V1.1** <br> <br>
-*Click The Version Title To See More Details*
-
-Version | [V0](readMe_docs/V0.md) | [V1](readMe_docs/V1.md) | [V1.1](readMe_docs/V1_1.md)
---- | --- | --- | ---
-Date Started  | 5/26/19 | 5/26/19 | 5/27/19 
-Date Completed  | 5/26/19 | 5/26/19 | n.a. 
 
 
 
