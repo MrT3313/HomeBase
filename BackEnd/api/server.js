@@ -13,7 +13,7 @@
     })
 
 // INDIVIDUAL ROUTES
-    server.use('api/users', usersRouter)
+    server.use('/api/users', usersRouter)
 
 // EXPORTS
     module.exports = server
