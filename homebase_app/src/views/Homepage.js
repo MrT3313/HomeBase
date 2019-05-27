@@ -7,9 +7,13 @@
 // COMPONENTS
     import Header from '../components/Header'
     import Footer from '../components/Footer'
+    import Projects from '../components/Projects'
 
 // IMPORT STYLED COMPONENTS
     import styled from 'styled-components'
+
+// IMPORT - STYLED COMPONENTS - INDIVIDUAL THEMES
+    import theme from '../styles/projects_homepage'
 
 // -- *** -- START CODE -- *** -- //
 // -- *** -- START CODE -- *** -- //
@@ -28,8 +32,8 @@ class Homepage extends Component {
         return (
             <HomepageContainer>
                 <Header />
-
-                <div>YO YO MAN - IM INSIDE THE HOMEPAGE - Body Placeholder</div>
+                
+                <Projects theme={theme}/>
 
                 <Footer />
             </HomepageContainer>

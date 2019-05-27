@@ -8,7 +8,7 @@ const express = require('express')
     const router = express.Router()
 
 // - GET - //
-
+    // ALL PROJECTS
     router.get('/', async (req,res) => {
         console.log('projectsRouter GET/')
 
@@ -20,6 +20,7 @@ const express = require('express')
                 res.status(500).json({ error: "GET api/projects/ --> Could not get all projects"})
             })
     })
+    // SINGLE PROJECT
     router.get('/:id', async (req,res) => {
         console.log('projectsRouter GET/:id')
         const { id } = req.params
@@ -32,6 +33,20 @@ const express = require('express')
             .catch( () => {
                 res.status(500).json({ error: `GET/:id --> Could not get PROJECT ${id}`})
             })
+    })
+    // ALL PROJECTS --> SINGLE USER
+    router.get('/user/:id', async (req,res) => {
+        console.log('projectsRouter GET/:id (single user not single project)')
+        const { id } = req.params
+
+        DB_knexVersion('projects')
+            .where('userID', id)
+                .then( userProjects => {
+                    res.status(200).json(userProjects)
+                })
+                .catch( () => {
+                    res.status(500).json({ error: `Could not get all of userID:${id} projects`})
+                })
     })
 
 // - POST - //

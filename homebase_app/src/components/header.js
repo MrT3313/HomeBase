@@ -1,5 +1,6 @@
 // REACT
-    import React, { Component } from "react"
+    import React, { Component, Link} from "react"
+
 
 // REDUX
     // import { connect } from 'react-redux
@@ -15,6 +16,9 @@
     import menuIcon from '../assets/MenuIcon_MaterialDesign.svg'
     import genericProfileIMG from '../assets/GenericProfileIMG.svg'
 
+// COMPONENTS
+    import UserProfile from '../views/UserProfile'
+
 // -- *** -- START CODE -- *** -- //
 // -- *** -- START CODE -- *** -- //
 
@@ -29,13 +33,35 @@
     `;
 
 class Header extends Component {
+    state = {
+        showMenu: false
+    }
+
+    menuIcon_clickHandler = e => {
+        console.log('You Clicked The Menu')
+        e.preventDefault()
+        this.setState(prevState => ({
+            ...prevState,
+            showMenu: !prevState.showMenu
+        }));
+    }
+
+    UserProfileIcon_clickHandler = e => {
+        console.log('You Clicked The UserProfileIMG')
+        e.preventDefault()
+
+    }
+
 
     render() {
         return (
             <ThemeProvider theme={theme}>
                 <HeaderContainer>
-                    <img src={menuIcon}/>
+                    
+                    <img src={menuIcon} onClick={this.menuIcon_clickHandler}/>
+                    
                     <img src={genericProfileIMG}/>
+
                 </HeaderContainer>
             </ThemeProvider>
         )
