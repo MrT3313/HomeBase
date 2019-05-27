@@ -29,8 +29,12 @@ Styling <br>
 ## FE Design Links
 [Current DESKTOP WireFrame - https://www.figma.com](https://www.figma.com/file/VzYaSTnsQxXCjXJ0VlFm14Kl/Home-Plate?node-id=0%3A1) <br>
 
-### FE Current Design:
+### Design 0:
 <img src='/readMe_files/imgs/HomeBase_Desktop_Design0.png' height='600'>
+
+### FE Current Design:
+
+N.A.
 
 
 
