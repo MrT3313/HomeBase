@@ -4,7 +4,7 @@ Lambda WebPT4
 
 # WHY
 - Project Goals: <br>
-    - Demonstrate my budding 'full stack' capabilities as a developer <br>
+    - Demonstrate my capabilities as a full stack developer <br>
     - Learn good documentation methods / techniques <br>
     - Document the evolution of the project from end to end <br>
 
@@ -15,7 +15,7 @@ Lambda WebPT4
 
 Version | [V0](readMe_files/docs/V0.md) | [V1](readMe_files/docs/V1.md) | [V1.1](readMe_files/docs/V1_1.md)
 --- | --- | --- | ---
-Date Started  | 5/26/19 | 5/26/19 | 5/27/19 
+Date Started  | 5/26/19 | 5/26/19 | 5/26/19 
 Date Completed  | 5/26/19 | 5/26/19 | n.a. 
 
 # FRONT END
