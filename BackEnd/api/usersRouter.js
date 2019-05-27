@@ -8,7 +8,6 @@
     const router = express.Router()
 
 // - GET - //
-
     router.get('/', async (req,res) => {
         console.log('userRouter GET/')
 
@@ -20,6 +19,20 @@
                 res.status(500).json({ error: "GET api/users/ --> Could not get all users"})
             })
     })
+    router.get('/:id', async (req,res) => {
+        console.log('userRouter GET/:id')
+        const { id } = req.params
+
+        DB_knexVersion('users')
+            .where('userID', id)
+            .then( user => {
+                res.status(200).json(user)
+            })
+            .catch( () => {
+                res.status(500).json({ error: `GET/:id --> Could not get USER ${id}`})
+            })
+    })
+
 
 // - POST - //
 // - PUT - //

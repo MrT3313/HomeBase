@@ -20,6 +20,19 @@ const express = require('express')
                 res.status(500).json({ error: "GET api/tasks/ --> Could not get all tasks"})
             })
     })
+    router.get('/:id', async (req,res) => {
+        console.log('tasksRouter GET/:id')
+        const { id } = req.params
+
+        DB_knexVersion('tasks')
+            .where('taskID', id)
+            .then( task => {
+                res.status(200).json(task)
+            })
+            .catch( () => {
+                res.status(500).json({error: `GET/:id --> Could not get OBJECTIVE ${id}`})
+            })
+    })
 
 // - POST - //
 // - PUT - //
