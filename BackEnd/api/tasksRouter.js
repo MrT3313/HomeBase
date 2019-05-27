@@ -51,6 +51,38 @@ const express = require('express')
     })
 
 // - PUT - //
+    /* 
+    ACCEPTED SHAPE
+        {
+            "startTime": "11:11",
+            "endTime": "11:11",
+            "type": "TEST",
+            "todoID": null,
+            "objectiveID": null
+        }
+    */
+    router.put('/:id', async(req,res) => {
+        console.log('tasksRouter PUT/:id')
+        const { id } = req.params
+
+        const updateData = req.body
+            updateData.taskID = id
+            console.log(updateData)
+
+        DB_knexVersion('tasks')
+            .where('taskID', id)
+            .update(updateData)
+                .then( updatedUser => {
+                    if (updatedUser) {
+                        res.status(200).json(updatedUser)
+                    } else {
+                        res.status(404).json({ error: `PUT/:id --> task ID ${id} not found`})
+                    }
+                })
+                .catch( () => {
+                    res.status(500).json({ error: `PUT/:id --> could not update task`})
+                })
+    })
 // - DELETE - //
 
 // EXPORTS

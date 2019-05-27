@@ -9,7 +9,7 @@
 
 // - GET - //
     router.get('/', async (req,res) => {
-        console.log('userRouter GET/')
+        console.log('usersRouter GET/')
 
         DB_knexVersion('users')
             .then( users => {
@@ -20,7 +20,7 @@
             })
     })
     router.get('/:id', async (req,res) => {
-        console.log('userRouter GET/:id')
+        console.log('usersRouter GET/:id')
         const { id } = req.params
 
         DB_knexVersion('users')
@@ -45,7 +45,7 @@
     }
     */
     router.post('/', async (req,res) => {
-        console.log('userROuter POST/')
+        console.log('usersRouter POST/')
 
         DB_knexVersion('users')
             .insert(req.body)
@@ -57,8 +57,40 @@
                 })
     })
 
-
 // - PUT - //
+    /*
+    ACCEPTED SHAPE:
+        {
+            "firstName": "NewEDITED",
+            "lastName": "UserEDITED",
+            "type": "customerEDITED",
+            "phone": "1233214321EDITED",
+            "address": "All The StreetsEDITED"
+        }
+    */
+    router.put('/:id', async(req,res) => {
+        console.log('usersRouter PUT/:id')
+        const { id } = req.params
+
+        const updateData = req.body
+            updateData.userID = id
+            console.log(updateData)
+
+        DB_knexVersion('users')
+            .where('userID', id)
+            .update(updateData)
+                .then( updatedUser => {
+                    if (updatedUser) {
+                        res.status(200).json(updatedUser)
+                    } else {
+                        res.status(404).json({ error: `PUT/:id --> user ID ${id} not found`})
+                    }
+                })
+                .catch( () => {
+                    res.status(500).json({ error: `PUT/:id --> could not update user`})
+                })
+            
+    })
 // - DELETE - //
 
 // EXPORTS

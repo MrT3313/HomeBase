@@ -55,6 +55,37 @@ const express = require('express')
     })
 
 // - PUT - //
+    /* 
+    ACCEPTED SHAPE
+        {
+            "todoDescription": "EDIT",
+            "todoTitle": "EDITED",
+            "date": "5/19/28",
+            "userID": 1
+        }
+    */
+    router.put('/:id', async(req,res) => {
+        console.log('todosRouter PUT/:id')
+        const { id } = req.params
+
+        const updateData = req.body
+            updateData.todoID = id
+            console.log(updateData)
+
+        DB_knexVersion('todos')
+            .where('todoID', id)
+            .update(updateData)
+                .then( updatedUser => {
+                    if (updatedUser) {
+                        res.status(200).json(updatedUser)
+                    } else {
+                        res.status(404).json({ error: `PUT/:id --> todo ID ${id} not found`})
+                    }
+                })
+                .catch( () => {
+                    res.status(500).json({ error: `PUT/:id --> could not update todo`})
+                })
+    })
 // - DELETE - //
 
 // EXPORTS

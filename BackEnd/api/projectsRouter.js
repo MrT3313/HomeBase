@@ -10,7 +10,7 @@ const express = require('express')
 // - GET - //
 
     router.get('/', async (req,res) => {
-        console.log('projectRouter GET/')
+        console.log('projectsRouter GET/')
 
         DB_knexVersion('projects')
             .then( projects => {
@@ -21,7 +21,7 @@ const express = require('express')
             })
     })
     router.get('/:id', async (req,res) => {
-        console.log('projectROuter GET/:id')
+        console.log('projectsRouter GET/:id')
         const { id } = req.params
 
         DB_knexVersion('projects')
@@ -57,6 +57,37 @@ const express = require('express')
     })
 
 // - PUT - //
+    /*
+    ACCEPTED SHAPE:
+    {
+        "projectDescription": "EDITED - dskjgak",
+        "projectTitle": "EDITED - sdfasdkfh",
+        "dueDate": "9/1/18",
+        "userID": 2
+    }
+    */
+    router.put('/:id', async(req,res) => {
+    console.log('projectsRouter PUT/:id')
+    const { id } = req.params
+
+    const updateData = req.body
+        updateData.projectID = id
+        console.log(updateData)
+
+    DB_knexVersion('projects')
+        .where('projectID', id)
+        .update(updateData)
+            .then( updatedUser => {
+                if (updatedUser) {
+                    res.status(200).json(updatedUser)
+                } else {
+                    res.status(404).json({ error: `PUT/:id --> project ID ${id} not found`})
+                }
+            })
+            .catch( () => {
+                res.status(500).json({ error: `PUT/:id --> could not update project`})
+            })
+})
 // - DELETE - //
 
 // EXPORTS

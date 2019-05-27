@@ -55,6 +55,32 @@ const express = require('express')
     })
 
 // - PUT - //
+    /*
+    ACCEPTED SHAPE:
+
+    */
+    router.put('/:id', async(req,res) => {
+        console.log('objectivesRouter PUT/:id')
+        const { id } = req.params
+
+        const updateData = req.body
+            updateData.objectiveID = id
+            console.log(updateData)
+
+        DB_knexVersion('objectives')
+            .where('objectiveID', id)
+            .update(updateData)
+                .then( updatedUser => {
+                    if (updatedUser) {
+                        res.status(200).json(updatedUser)
+                    } else {
+                        res.status(404).json({ error: `PUT/:id --> objective ID ${id} not found`})
+                    }
+                })
+                .catch( () => {
+                    res.status(500).json({ error: `PUT/:id --> could not update objective`})
+                })
+    })
 // - DELETE - //
 
 // EXPORTS
