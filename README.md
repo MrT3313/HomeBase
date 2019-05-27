@@ -28,7 +28,7 @@ Styling <br>
 
 ## FE Design Images
 ### FE Design 0:
-[FE WireFrame](https://www.figma.com/file/VzYaSTnsQxXCjXJ0VlFm14Kl/Home-Plate?node-id=0%3A1)
+[FE WireFrame](https://www.figma.com/file/VzYaSTnsQxXCjXJ0VlFm14Kl/Home-Plate?node-id=0%3A1) <br>
 <img src='/readMe_imgs/HomeBase_Desktop_Design0.png' height='600'>
 
 
@@ -37,7 +37,7 @@ Styling <br>
 
 ## BE Design Images
 ### BE Design 0:
-[BE WireFrame](https://dbdiagram.io/d/5ceb10e51f6a891a6a65767e)
+[BE WireFrame](https://dbdiagram.io/d/5ceb10e51f6a891a6a65767e) <br>
 <img src='/readMe_imgs/HomeBase_DB_Design0.png' height='600'>
 
 
