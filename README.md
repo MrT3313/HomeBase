@@ -4,9 +4,9 @@ Lambda WebPT4
 
 # WHY
 - Project Goals: <br>
-    1) Demonstrate my budding 'full stack' capabilities as a developer <br>
-    2) Learn good documentation methods / techniques <br>
-    3) Document the evolution of the project from end to end <br>
+    - Demonstrate my budding 'full stack' capabilities as a developer <br>
+    - Learn good documentation methods / techniques <br>
+    - Document the evolution of the project from end to end <br>
 
 <br>
 
