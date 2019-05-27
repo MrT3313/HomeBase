@@ -27,37 +27,22 @@ Styling <br>
 [SQLite](https://www.sqlite.org/index.html) - Database Engine <br>
 
 ## BE Design Images
-### BEDesign 0:
+### BE Design 0:
 <img src='/readMe_imgs/HomeBase_DB_Design0.png' height='600'>
 
 
 # Development
 
-We are currently in **V1.1**
+We are currently in **V1.1** <br> <br>
+*Click The Version Title To See More Details*
+
+Version | [V0](readMe_docs/V0.md) | [V1](readMe_docs/V1.md) | [V1.1](readMe_docs/V1_1.md)
+--- | --- | --- | ---
+Date Started  | 5/26/19 | 5/26/19 | 5/27/19 
+Date Completed  | 5/26/19 | 5/26/19 | n.a. 
 
 
-Version | V0 | V1 | V1.1 | V1.2 | V1.3
---- | --- | --- | --- |--- |--- 
-Date Started  | 5/26/19 | 5/26/19 | 5/27/19 | n.a. | n.a. 
-Date Completed  | 5/26/19 | 5/26/19 | n.a. | n.a. | n.a.
 
-### V0
-    Ideation / Design & Initial ReadMe
-### V1
-    FE: --> Create-React-App
-    BE: --> N.A. 
-
-### V1.1
-    FE: --> <Header /> & <Footer />
-    BE: --> SQLite
-
-### V1.2
-    FE: --> <WeeklyObjectives /> & <Projects />
-    BE: --> TBD
-
-### V1.3   
-    FE: --> <ToDoList /> & <TimeTracking />
-    BE: --> TBD
 
 
 
