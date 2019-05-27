@@ -28,27 +28,21 @@ Styling <br>
 
 ## FE Design Links
 [Current DESKTOP WireFrame - https://www.figma.com](https://www.figma.com/file/VzYaSTnsQxXCjXJ0VlFm14Kl/Home-Plate?node-id=0%3A1) <br>
+- [FE Design_0](readMe_files/imgs/HomeBase_Desktop_Design0.png)
 
 ### FE Current Design:
 N.A.
-
-#### FE Design 0:
-[FE Design_0](readMe_files/imgs/HomeBase_Desktop_Design0.png)
-
-
-
 
 # BUILD INFO - Back End
 [SQLite](https://www.sqlite.org/index.html) - Database Engine <br>
 
 ## BE Design Links
 [Current WireFrame - https://dbdiagram.io](https://dbdiagram.io/d/5ceb10e51f6a891a6a65767e) <br>
+- [BE Design_0](readMe_files/imgs/HomeBase_DB_Design0.png)
 
 ### BE Current Design:
 <img src='/readMe_files/imgs/HomeBase_DB_Design0.png' height='600'>
 
-#### BE Design 0
-[BE Design_0](readMe_files/imgs/HomeBase_DB_Design0.png)
 
 
 
