@@ -1,15 +1,15 @@
 // IMPORT ACTION TYPES
-    // import {
-    //     LOGIN_START, 
-    //     LOGIN_SUCCESS, 
-    //     LOGIN_FAILURE, 
-// 
-    // } from './'
+    import {
+        LOGIN_START, 
+        LOGIN_SUCCESS, 
+        LOGIN_FAILURE, 
+
+    } from '../actions/a_login'
 
 
 // INITIAL STATE
     const initialState = {
-        currentUserID: undefined,
+        currentUserID: 1,
         
         is_LoggingIn: false,
         error: ''
@@ -22,17 +22,32 @@ export const r_login = (state = initialState, action) => {
         // LOGIN
         case LOGIN_START:
             return {
-                ...state
+                ...state,
+
+                is_LoggingIn: true,
+                error: ''
 
             }
         case LOGIN_SUCCESS:
             return {
-                ...state
+                ...state,
+
+                // REAL VERSION
+                    // take data off action.payload
+                
+                // FAKE VERSION
+                    // currentUserID: 1,
+
+                is_LoggingIn: false,
+                error:''
 
             }
         case LOGIN_FAILURE:
             return {
-                ...state
+                ...state,
+
+                is_LoggingIn: false,
+                error: 'LOGIN FAILURE'
                 
             }
         default:
