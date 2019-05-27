@@ -2,8 +2,6 @@
 Created By: Reed Turgeon <br>
 Lambda WebPT4
 
-<br>
-
 # WHY
 Project Goals: <br>
     1) Demonstrate my budding 'full stack' capabilities as a developer <br>
@@ -37,43 +35,31 @@ Styling <br>
 
 We are currently in **V1.1**
 
-## V0
-    Ideation / Design
-    Initial ReadMe
 
-## V1
-    FE:
-        Create-React-App
-    BE:
-        N.A. 
+Version | V0 | V1 | V1.1 | V1.2 | V1.3
+--- | --- | --- | --- |--- |--- 
+Date Started  | 5/26/19 | 5/26/19 | 5/27/19 | n.a. | n.a. 
+Date Completed  | 5/26/19 | 5/26/19 | n.a. | n.a. | n.a.
 
-## V1.1
-    FE:
-        <Header />
-        <Footer />
-    BE:
-        SQLite <br>
+### V0
+    Ideation / Design & Initial ReadMe
+### V1
+    FE: --> Create-React-App
+    BE: --> N.A. 
 
-## V1.2
-    <WeeklyObjectives />
-    <Projects />
+### V1.1
+    FE: --> <Header /> & <Footer />
+    BE: --> SQLite
 
-## V1.3   
-    <ToDoList />
-    <TimeTracking />
+### V1.2
+    FE: --> <WeeklyObjectives /> & <Projects />
+    BE: --> TBD
+
+### V1.3   
+    FE: --> <ToDoList /> & <TimeTracking />
+    BE: --> TBD
 
 
-# Dates
-
-V0 - Started: 5/26/19   <br>
-V0 - Completed: 5/26/19 <br>
-<br>
-
-V1 - Started: 5/26/19   <br>
-V1 - Completed: 5/26/19   <br>
-
-<br>
-V1.2 - Started: 5/27/19   <br>
 
 
 
