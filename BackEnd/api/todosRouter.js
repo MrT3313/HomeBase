@@ -87,6 +87,24 @@ const express = require('express')
                 })
     })
 // - DELETE - //
+    router.delete('/:id', async (req,res) => {
+        console.log("todosRouter DELETE/:id")
+        const { id } = req.params
+
+        DB_knexVersion('todos')
+            .where('todoID', id)
+            .del()
+                .then( results => {
+                    if (results) {
+                        res.status(200).json(results)
+                    } else {
+                        res.status(404).json({ error: `DELETE/:id --> todoID ${id} not found`})
+                    }
+                })
+                .catch( () => {
+                    res.status(500).json({error: 'DELETE/:id --> could not delete todo'})
+                })
+    })
 
 // EXPORTS
     module.exports = router

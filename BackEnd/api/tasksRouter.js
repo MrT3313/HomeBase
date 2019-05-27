@@ -84,6 +84,24 @@ const express = require('express')
                 })
     })
 // - DELETE - //
+    router.delete('/:id', async (req,res) => {
+        console.log("taskssRouter DELETE/:id")
+        const { id } = req.params
+
+        DB_knexVersion('tasks')
+            .where('taskID', id)
+            .del()
+                .then( results => {
+                    if (results) {
+                        res.status(200).json(results)
+                    } else {
+                        res.status(404).json({ error: `DELETE/:id --> taskID ${id} not found`})
+                    }
+                })
+                .catch( () => {
+                    res.status(500).json({error: 'DELETE/:id --> could not delete task'})
+                })
+    })
 
 // EXPORTS
     module.exports = router
