@@ -18,7 +18,7 @@ Version | [V0](readMe_files/docs/V0.md) | [V1](readMe_files/docs/V1.md) | [V1.1]
 Date Started  | 5/26/19 | 5/26/19 | 5/27/19 
 Date Completed  | 5/26/19 | 5/26/19 | n.a. 
 
-# BUILD INFO - Front End
+# FRONT END
 - Main <br>
 [React](https://reactjs.org/) - UI Framework <br>
 [Redux](https://redux.js.org/) - UI Data Storage <br>
@@ -33,7 +33,7 @@ Date Completed  | 5/26/19 | 5/26/19 | n.a.
 ### FE Current Design:
 N.A.
 
-# BUILD INFO - Back End
+# BACK END
 - Main <br>
 [SQLite](https://www.sqlite.org/index.html) - Database Engine <br>
 
