@@ -35,6 +35,27 @@ const express = require('express')
     })
 
 // - POST - //
+    /*
+    ACCEPTED SHAPE:
+    {
+        "versionID": 1,
+        "projectDescription": "THE NEWEST PROJECT EVER",
+        "projectTitle": "Mr.T UPGRADED",
+        "dueDate": "4/3/2918",
+        "userID": 1
+    }
+    */
+    router.post('/', async (req,res) => {
+        DB_knexVersion('projects')
+            .insert(req.body)
+                .then( results => {
+                    res.status(201).json(results)
+                })
+                .catch( () => {
+                    res.status(500).json({ error: `POST/ --> Could not INSERT new project`})
+                })
+    })
+
 // - PUT - //
 // - DELETE - //
 

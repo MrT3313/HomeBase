@@ -35,6 +35,21 @@ const express = require('express')
     })
 
 // - POST - //
+    /*
+    ACCEPTED SHAPE:
+
+    */
+    router.post('/', async(req,res) => {
+        DB_knexVersion('tasks')
+            .insert(req.body)
+                .then( results => {
+                    res.status(200).json(results)
+                })
+                .catch( () => {
+                    res.status(500).json({ error: `POST/ --> Could not INSERT new task`})
+                })
+    })
+
 // - PUT - //
 // - DELETE - //
 

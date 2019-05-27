@@ -35,6 +35,25 @@ const express = require('express')
     })
 
 // - POST - //
+    /*
+    ACCEPTED SHAPE:
+    {
+        "objectiveStatus": "Active",
+        "objectiveTitle": "NEWLY ADDED",
+        "userID": 1
+    }
+    */
+    router.post('/', async(req,res) => {
+        DB_knexVersion('objectives')
+            .insert(req.body)
+                .then( results => {
+                    res.status(201).json(results)
+                })
+                .catch(() => {
+                    res.status(500).json({ error: `POST/ --> Could not INSERT new objective`})
+                })
+    })
+
 // - PUT - //
 // - DELETE - //
 

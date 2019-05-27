@@ -33,8 +33,31 @@
             })
     })
 
-
 // - POST - //
+    /*
+    ACCEPTED SHAPE:
+    {
+        "firstName": "New", 
+        "lastName": "User",
+        "type": "customer",
+        "phone": "1233214321",
+        "address": "All The Streets"
+    }
+    */
+    router.post('/', async (req,res) => {
+        console.log('userROuter POST/')
+
+        DB_knexVersion('users')
+            .insert(req.body)
+                .then( results => {
+                    res.status(201).json(results)
+                })
+                .catch( () => {
+                    res.status(500).json({ error: `POST/ --> Could not INSERT new user`})
+                })
+    })
+
+
 // - PUT - //
 // - DELETE - //
 
