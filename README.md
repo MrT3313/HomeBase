@@ -20,11 +20,11 @@ Date Completed  | 5/26/19 | 5/26/19 | n.a.
 
 # BUILD INFO - Front End
 - Main <br>
-1) [React](https://reactjs.org/) - UI Framework <br>
-2) [Redux](https://redux.js.org/) - UI Data Storage <br>
+[React](https://reactjs.org/) - UI Framework <br>
+[Redux](https://redux.js.org/) - UI Data Storage <br>
 
 - Styling <br>
-1) [Styled Components](https://www.styled-components.com/) - React Component Styling 
+[Styled Components](https://www.styled-components.com/) - React Component Styling 
 
 ### FE Design Links
 [Current DESKTOP WireFrame - https://www.figma.com](https://www.figma.com/file/VzYaSTnsQxXCjXJ0VlFm14Kl/Home-Plate?node-id=0%3A1) <br>
@@ -35,7 +35,7 @@ N.A.
 
 # BUILD INFO - Back End
 - Main <br>
-1) [SQLite](https://www.sqlite.org/index.html) - Database Engine <br>
+[SQLite](https://www.sqlite.org/index.html) - Database Engine <br>
 
 ### BE Design Links
 [Current WireFrame - https://dbdiagram.io](https://dbdiagram.io/d/5ceb10e51f6a891a6a65767e) <br>
