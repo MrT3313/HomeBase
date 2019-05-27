@@ -10,14 +10,14 @@ const express = require('express')
 // - GET - //
 
     router.get('/', async (req,res) => {
-        console.log('projectRouter GET/')
+        console.log('objectivesRouter GET/')
 
-        DB_knexVersion('projects')
-            .then( projects => {
-                res.status(200).json(projects)
+        DB_knexVersion('objectives')
+            .then( objectives => {
+                res.status(200).json(objectives)
             })
             .catch( () => {
-                res.status(500).json({ error: "GET api/projects/ --> Could not get all projects"})
+                res.status(500).json({ error: "GET api/objectives/ --> Could not get all objectives"})
             })
     })
 
