@@ -1,5 +1,6 @@
 // IMPORTS
     const express = require('express')
+    const cors = require('cors')
 
 // ROUTERS
     const usersRouter = require('./usersRouter')
@@ -10,7 +11,9 @@
 
 // SERVER 
     const server = express()
+    server.use(cors())
     server.use(express.json())
+
 
 // HOMEPAGE ROUTING
     server.get('/', (req,res) => {

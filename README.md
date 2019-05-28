@@ -11,11 +11,13 @@ Lambda WebPT4
 <br>
 
 # Development Progress
+Current Master Version = **V2** <br>
 *Click The Version Title To See More Details*
+
 
 Version | [V0](readMe_files/docs/V0.md) | [V1](readMe_files/docs/V1.md) | [V1.1](readMe_files/docs/V1_1.md) | V2 | [V2.1](readMe_files/docs/V2_1.md)
 --- | --- | --- | --- | --- | ---
-Date Started  | 5/26/19 | 5/26/19 | 5/26/19 | - - | 6/27/19
+Date Started  | 5/26/19 | 5/26/19 | 5/26/19 | - - | 5/27/19
 Date Completed  | 5/26/19 | 5/26/19 | 5/27/19 | - - | N.A. 
 
 # FRONT END

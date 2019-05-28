@@ -2,6 +2,7 @@
     import React from 'react';
     import ReactDOM from 'react-dom';
     import { Provider } from "react-redux"
+    import { BrowserRouter as Router } from 'react-router-dom'
 
 // REDUX
     import thunk from "redux-thunk"
@@ -26,7 +27,9 @@ const store = createStore(
 // RENDER APP
 ReactDOM.render(
     <Provider store={store}>
-        <App /> 
+        <Router>
+            <App /> 
+        </Router>
     </Provider>,
     document.getElementById('root')
 );

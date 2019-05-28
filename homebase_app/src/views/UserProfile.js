@@ -1,5 +1,5 @@
 // REACT 
-    import React, { Component } from 'react';
+import React, { Component } from 'react';
 
 // REDUX 
     // import { connect } from "react-redux"
@@ -7,36 +7,30 @@
 // COMPONENTS
     import Header from '../components/Header'
     import Footer from '../components/Footer'
-    import Projects from '../components/Projects'
 
 // IMPORT STYLED COMPONENTS
     import styled from 'styled-components'
-
-// IMPORT - STYLED COMPONENTS - INDIVIDUAL THEMES
-    import theme from '../styles/projects_homepage'
 
 // -- *** -- START CODE -- *** -- //
 // -- *** -- START CODE -- *** -- //
 
 // STYLED COMPONENTS
-    const HomepageContainer = styled.div`
+    const UserProfileContainer = styled.div`
         display: flex;
         flex-direction: column;
     `;
-
-// COMPONENT
-class Homepage extends Component {
+class UserProfile extends Component {
 
 
     render() {
         return (
-            <HomepageContainer>
+            <UserProfileContainer>
                 <Header />
-                
-                <Projects theme={theme}/>
 
+                <div>INSIDE USER PROFILE</div>
+                
                 <Footer />
-            </HomepageContainer>
+            </UserProfileContainer>
         )
     }
 }
@@ -48,4 +42,4 @@ class Homepage extends Component {
 
 
 
-export default Homepage 
+export default UserProfile 
