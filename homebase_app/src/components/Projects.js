@@ -11,7 +11,11 @@ import React, { Component } from "react"
     import styled from 'styled-components'
     import { ThemeProvider } from 'styled-components'
 
-// IMPORT ACTION CREATORS
+// IMPORT COLORS
+    import colors from '../styles/index'
+
+
+// IMPORT ACTION CREATOR
     import { getProjects } from '../redux/actions/a_getProjects'
 
 // -- *** -- START CODE -- *** -- //
@@ -19,12 +23,33 @@ import React, { Component } from "react"
 
 // Styled Components
     const ProjectsContainer = styled.div`
+        position: relative;    
+
         display: flex;
         flex-direction: column;
+        align-items: center;
 
         background-color: ${props => props.theme.backgroundColor};
         color: ${props => props.theme.fontColor};
 
+        .DIVIDER {
+            position: absolute;
+                top: 25px;
+            display: flex;
+
+            height: 20px;
+            width: 98%;
+            border-radius: 5px;
+
+            background-color: blue;
+        }
+        .projectContent {
+            width: 80%;
+
+            .projectTitle {
+                margin-bottom: 40px;
+            }
+        }
         ul {
             list-style-type: none;
             padding: 0px;
@@ -45,18 +70,29 @@ class Projects extends Component {
         return (
             <ThemeProvider theme={this.props.theme}>
                 <ProjectsContainer>
-                    <div className='project_TITLE'>
-                        PROJECTS:
+                    {/* Position Absolutly ased on <ProjectContainer /> */}
+                    <div className='DIVIDER'>
+                        {/* DIVIDER */}
                     </div>
-                    <div className='project_LIST'>
-                        <ul>
-                            {
-                                this.props.currentUserPROJECTS.map(project => {
-                                    console.log(project)
-                                    return <li><Project project={project}/></li>
-                                })
-                            }
-                        </ul>
+
+                    <div className='projectContent'>
+                        <div className='projectTitle'>
+                            PROJECTS:
+                        </div>
+                        <div className='project_LIST'>
+                            {/* <ul> */}
+                                {
+                                    this.props.currentUserPROJECTS.map(project => {
+                                        console.log(project)
+                                        return (
+                                            // <li>
+                                                <Project project={project}/>
+                                            // </li>
+                                        )
+                                    })
+                                }
+                            {/* </ul> */}
+                        </div>
                     </div>
                 </ProjectsContainer>
             </ThemeProvider>

@@ -17,7 +17,7 @@ Current Master Version = **V2** <br>
 
 Version | [V0](readMe_files/docs/V0.md) | [V1](readMe_files/docs/V1.md) | [V1.1](readMe_files/docs/V1_1.md) | V2 | [V2.1](readMe_files/docs/V2_1.md) | [V2.2](readMe_files/docs/V2_2.md)
 --- | --- | --- | --- | --- | --- | ---
-Date Started  | 5/26/19 | 5/26/19 | 5/26/19 | - - | 5/27/19 | 5/28/19
+Date Started  | 5/26/19 | 5/26/19 | 5/26/19 | - - | 5/27/19 | 5/27/19
 Date Completed  | 5/26/19 | 5/26/19 | 5/27/19 | - - | 5/27/19 | N.A.
 
 # FRONT END
@@ -30,7 +30,10 @@ Date Completed  | 5/26/19 | 5/26/19 | 5/27/19 | - - | 5/27/19 | N.A.
 
 ### FE Design Links
 [Current DESKTOP WireFrame - https://www.figma.com](https://www.figma.com/file/VzYaSTnsQxXCjXJ0VlFm14Kl/Home-Plate?node-id=0%3A1) <br>
-- [FE Design_0]('readMe_files/imgs/HomeBase_Desktop_V2.2 5-27-19.png')
+
+ - [FE Design_0](readMe_files/imgs/homeBase_DB_V1.1_Design_1.png)
+
+ - [*Current* -> FE Design_V2.2](readMe_files/imgs/HomeBase_Desktop_V2.2_5-27-19.png)
 
 ### FE Current Design:
 V2.2 - SHELL: <br>

@@ -13,6 +13,7 @@
     import Goals from '../components/Goals'
     import Events from '../components/Events'
     import Calendar from '../components/Calendar'
+    
 
 
 
@@ -35,6 +36,7 @@
         .content_rowA, .content_rowB { 
             display: flex;
             flex-direction: row;
+            margin-top: 20px;
         }
 
         .content_rowB {
