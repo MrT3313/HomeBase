@@ -21,7 +21,8 @@
     import styled from 'styled-components'
 
 // IMPORT - STYLED COMPONENTS - INDIVIDUAL THEMES
-    import theme from '../styles/projects_homepage'
+    import Projects_theme from '../styles/projects_homepage'
+    import Todos_theme from '../styles/todos_homepage'
 
 // -- *** -- START CODE -- *** -- //
 // -- *** -- START CODE -- *** -- //
@@ -30,13 +31,16 @@
     const HomepageContainer = styled.div`
         display: flex;
         flex-direction: column;
-
-        
+        width: 100%;
 
         .content_rowA, .content_rowB { 
             display: flex;
             flex-direction: row;
             margin-top: 20px;
+        }
+
+        .content_rowA {
+            justify-content: center;
         }
 
         .content_rowB {
@@ -47,7 +51,7 @@
             }
 
             .rowB_LEFT {
-                width: 25%
+                min-width: 100px;
             }
             .rowB_RIGHT {
                 width: 75%
@@ -63,17 +67,23 @@ class Homepage extends Component {
 
     render() {
         return (
-            <HomepageContainer>
+            <HomepageContainer className='HOMEPAGE VIEW'>
                 <Header />
 
                 <div className='content_rowA'>
-                    <Projects theme={theme}/>
                     <Objectives />
                 </div>
                 <div className='content_rowB'>
                     <div className='rowB_LEFT'>
-                        <Todos />
+                        <Projects theme={Projects_theme}/>
+                        <Todos theme={Todos_theme}/>
                     </div>
+                    <div className='rowB_RIGHT'>
+                        Time Tracking
+                    </div>
+                </div>
+
+                <div className='content_rowC'>
                     <div className='rowB_RIGHT'>
                         <Goals />
                         <Events />

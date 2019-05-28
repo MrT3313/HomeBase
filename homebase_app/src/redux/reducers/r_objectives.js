@@ -11,7 +11,7 @@ const initialState = {
     objectives: [],
     error: '',
 
-    is_gettingObjectives: false
+    is_gettingUserObjectives: false
 }
 
 // REDUCER
@@ -22,7 +22,7 @@ export const r_objectives = (state = initialState, action) => {
                 return {
                     ...state,
 
-                    is_gettingObjectives: true,
+                    is_gettingUserObjectives: true,
                     error: ''
 
                 }
@@ -30,7 +30,7 @@ export const r_objectives = (state = initialState, action) => {
                 return {
                     ...state,
 
-                    is_gettingObjectives: false,
+                    is_gettingUserObjectives: false,
                     objectives: action.payload,
                     error: '',
 
@@ -39,7 +39,7 @@ export const r_objectives = (state = initialState, action) => {
                 return {
                     ...state,
 
-                    is_gettingObjectives: false,
+                    is_gettingUserObjectives: false,
                     error: 'unable to get Objectives'
 
                 }

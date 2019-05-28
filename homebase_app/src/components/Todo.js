@@ -14,34 +14,35 @@ import React, { Component } from "react"
 // ASSETS
 
 
+
 // -- *** -- START CODE -- *** -- //
 // -- *** -- START CODE -- *** -- //
 
 // Styled Components
-    const WeekdaysContainer = styled.div`
+    const TodoContainer = styled.div`
         display: flex;
-        flex-direction: row;
+        margin-bottom: 10px;
 
-        div {
-            margin-right: 10px;
-        }
+        border: 1px solid black
+        border-radius: 5px;
     `;
 
-class Weekdays extends Component {
-
+class Todo extends Component {
+    state = {
+        show_description: false
+    }
+    
     render() {
         return (
-                <WeekdaysContainer>
-                    <div>MON</div>
-                    <div>TUE</div>
-                    <div>WED</div>
-                    <div>THU</div>
-                    <div>FRI</div>
-                    <div>SAT</div>
-                    <div>SUN</div>
-                </WeekdaysContainer>
-        
+            <TodoContainer>
+                {this.props.todo.todoTitle}
+
+                {
+                    this.state.show_description && <div tglDescription> {this.props.todo.todoDescription} </div>
+                }
+            </TodoContainer>
+
         )
     }
 }
-export default Weekdays
+export default Todo

@@ -11,7 +11,7 @@ export const GET_USER_OBJECTIVES_FAILURE = 'GET_USER_OBJECTIVES_FAILURE'
 
 // ACTION CREATOR
 export const getUserObjectives = (currentUser) => {
-    console.log('getObjectives Action Creator')
+    console.log('getUserObjectives Action Creator')
     console.log(currentUser)
 
     // SEND FIRST ACTION

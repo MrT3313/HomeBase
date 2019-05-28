@@ -22,6 +22,7 @@ import React, { Component } from "react"
 // Styled Components
     const ObjectiveContainer = styled.div`
         display: flex;
+        margin-bottom: 10px;
     `;
 
 class Objective extends Component {

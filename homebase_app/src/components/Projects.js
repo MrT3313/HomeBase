@@ -38,7 +38,7 @@ import React, { Component } from "react"
             display: flex;
 
             height: 20px;
-            width: 98%;
+            width: 95%;
             border-radius: 5px;
 
             background-color: blue;

@@ -31,7 +31,8 @@ Date Completed  | 5/26/19 | 5/26/19 | 5/27/19 | - - | 5/27/19 | N.A.
 ### FE Design Links
 [Current DESKTOP WireFrame - https://www.figma.com](https://www.figma.com/file/VzYaSTnsQxXCjXJ0VlFm14Kl/Home-Plate?node-id=0%3A1) <br>
 
- - [FE Design_0](readMe_files/imgs/homeBase_DB_V1.1_Design_1.png)
+ - [FE Design_0](readMe_files/imgs/HomeBase_Desktop_Design0.png)
+ - [FE Design_1](readMe_files/imgs/HomeBase_Desktop_Design1.png)
 
  - [*Current* -> FE Design_V2.2](readMe_files/imgs/HomeBase_Desktop_V2.2_5-27-19.png)
 
