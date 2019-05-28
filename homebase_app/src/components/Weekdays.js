@@ -24,6 +24,7 @@ import React, { Component } from "react"
 
         div {
             margin-right: 10px;
+            
         }
     `;
 

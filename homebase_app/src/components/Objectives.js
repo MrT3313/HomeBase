@@ -15,7 +15,7 @@ import React, { Component } from "react"
         // import theme from '../styles/footer_homepage'
 
 // COMPONENTS
-    import Objective from './Objective'
+    import ObjectiveRow from './ObjectiveRow'
     import Weekdays from './Weekdays'
 
 // ASSETS
@@ -26,43 +26,37 @@ import React, { Component } from "react"
 
 // Styled Components
     const ObjectivesContainer = styled.div`
-        position: relative;
 
         display: flex;
-        flex-direction: row; 
-        justify-content: center;
+        flex-direction: column;
+        
 
-        .DIVIDER {
-            position: absolute;
-                top: 60px;
-            display: flex;
 
-            height: 20px;
-            width: 98%;
-            border-radius: 5px;
-
-            background-color: pink;
+        .objectiveRow_2 {
+            margin-top: 10px;
         }
 
-        .objectivesContent {
-            width: 80%;
-        }
-
-        .objectivesContent_TOP {
+        .objectiveRow_1 {
             display: flex;
             flex-direction: row;
             align-items: center;
-            width: 100%;
             
             .weekOfDate {
+                display: flex;
                 text-align: center;
-                margin: 0px 10px;
-                min-width: 50px;
+
+                min-width: 65px;
+
+                margin-right: 10px;
+                
+                
             }
         }
-        .objectivesContent_BOTTOM {
-            margin-top: 30px;
-        }
+
+
+
+
+
 
     `;
 
@@ -75,74 +69,26 @@ class Objectives extends Component {
 
     render() {
         return (
-            // <ThemeProvider >
                 <ObjectivesContainer>
-                    {/* Position Absolutly ased on <ObjectivesContainer /> */}
-                    <div className='DIVIDER'>
-                        {/* DIVIDER */}
+
+                    <div className='objectiveRow_1'>
+                        <div className='weekOfDate'>
+                            Week Of: <br/>
+                            5/27/19 
+                        </div>
+                        <Weekdays />
+                    </div>
+                    <div className='objectiveRow_2'>
+                        {this.props.currentUserOBJECTIVES.map( objective => {
+                            return <ObjectiveRow objective={objective}/>
+                        })}
                     </div>
 
-                    <div className='objectivesContent'>
-                        <div className='objectivesContent_TOP'>
-                            <div className='weekOfDate'>
-                                Week Of: 5/27/19
-                            </div>
-                            <div className='daysOfWeek'>
-                                <Weekdays />
-                            </div>
-                        </div>
-                        <div className='objectivesContent_BOTTOM'>
-                            <div className='objectivesLIST'>
-                                {/* MAP AND RENDER INDIVIDUAL OBJECTIVES */}
-                                {this.props.currentUserOBJECTIVES.map( objective => {
-                                    console.log(objective)
-                                    return (
-                                        <Objective objective={objective}/>
-                                    )
-                                })}
-                            </div>
-                            <div className='Objectives Log'>
 
-                            </div>
-                        </div>
-                    </div>
+
+
+
                 </ObjectivesContainer>
-
-
-
-
-
-                    // <div className='objectivesLEFT'>
-                    //     <div className='weekOfDate'>
-                    //         Week Of: <br/>
-                    //         5/27/19
-                    //     </div>
-                    //     <div className='objectivesLIST'>
-                    //         <ul>
-                    //             <li>item1</li>
-                    //             <li>objective2</li>
-                    //             <li>item3</li>
-                    //             <li>objective4</li>
-
-                    //         </ul>
-                    //     </div>
-                    // </div>
-                    // <div className='objectivesRIGHT'>
-                    //     <div className='weekdayTitles'>
-                    //         <div>M</div>
-                    //         <div>T</div>
-                    //         <div>W</div>
-                    //         <div>Th</div>
-                    //         <div>F</div>
-                    //         <div>S</div>
-                    //         <div>Su</div>
-                    //     </div>
-                    //     <div className='completionNotes'>
-
-                    //     </div>
-                    // </div>
-                
-            // </ThemeProvider>
 
         )
     }

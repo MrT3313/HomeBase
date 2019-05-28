@@ -57,7 +57,7 @@ EXPRESS ROUTES:
 - /api/users
     - GET / 
     - GET /:id 
-    - Post /
+    - POST /
         ```
         Accepted Shape
         {
@@ -68,7 +68,7 @@ EXPRESS ROUTES:
             "address": "string"
         }
         ```
-    - Update /:id 
+    - PUT /:id 
         ```
         Accepted SHape
         {
@@ -84,7 +84,7 @@ EXPRESS ROUTES:
     - GET / 
     - GET /:id 
     - GET /user/:id 
-    - Post /
+    - POST /
         ```
         Accepted Shape
         {
@@ -94,7 +94,7 @@ EXPRESS ROUTES:
             "userID": integer
         }
         ```
-    - Update /:id 
+    - PUT /:id 
         ```
         Accepted Shape
         {
@@ -109,7 +109,7 @@ EXPRESS ROUTES:
     - GET / 
     - GET /:id 
     - GET /user/:id 
-    - Post /
+    - POST /
         ```
         Accepted Shape
         {
@@ -118,7 +118,7 @@ EXPRESS ROUTES:
             "userID": integer
         }
         ```
-    - Update /:id 
+    - PUT /:id 
         ```
         Accepted Shape
         {
@@ -133,7 +133,7 @@ EXPRESS ROUTES:
     - GET / 
     - GET /:id 
     - GET /user/:id 
-    - Post /
+    - POST /
         ```
         Accepted Shape
         {
@@ -143,7 +143,7 @@ EXPRESS ROUTES:
             "userID": 1
         }
         ```
-    - Update /:id 
+    - PUT /:id 
         ```
         Accepted Shape
         {
@@ -158,7 +158,7 @@ EXPRESS ROUTES:
     - GET / 
     - GET /:id 
     - GET /user/:id 
-    - Post /
+    - POST /
         ```
         Accepted Shape
         {
@@ -169,7 +169,7 @@ EXPRESS ROUTES:
             "objectiveID": integer
         }
         ```
-    - Update /:id 
+    - PUT /:id 
         ```
         Accepted Shape
         {
