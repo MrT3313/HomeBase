@@ -54,6 +54,9 @@ import React, { Component } from "react"
             .contentLeft {
                 margin-right: 10px;
             }
+            .contentRight {
+                width: 100%;
+            }
         }
     `;
 

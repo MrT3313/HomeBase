@@ -8,7 +8,7 @@ const express = require('express')
     const router = express.Router()
 
 // - GET - //
-
+    // ALL OBJECTIVES
     router.get('/', async (req,res) => {
         console.log('objectivesRouter GET/')
 
@@ -20,6 +20,7 @@ const express = require('express')
                 res.status(500).json({ error: "GET api/objectives/ --> Could not get all objectives"})
             })
     })
+    // SINGLE OBJECTIVE
     router.get('/:id', async (req,res) => {
         console.log('objectivesRouter GET/:id')
         const { id } = req.params
@@ -33,6 +34,21 @@ const express = require('express')
                 res.status(500).json({error: `GET/:id --> Could not get OBJECTIVE ${id}`})
             })
     })
+    // ALL OBJECTIVES --> SINGLE USER
+    router.get('/user/:id', async (req,res) => {
+        console.log('objectiveRouter GET/user/:id')
+        const { id } = req.params
+
+        DB_knexVersion('objectives')
+            .where('userID', id)
+                .then( userObjectives => {
+                    res.status(200).json(userObjectives)
+                })
+                .catch( () => {
+                    res.status(500).json({ error: `Could not get all of userID:${id} Objectives`})
+                })
+    })
+
 
 // - POST - //
     /*
@@ -57,7 +73,12 @@ const express = require('express')
 // - PUT - //
     /*
     ACCEPTED SHAPE:
-
+        {
+            "objectiveID": 1,
+            "objectiveStatus": "Active",
+            "objectiveTitle": "Read",
+            "userID": 1
+        }
     */
     router.put('/:id', async(req,res) => {
         console.log('objectivesRouter PUT/:id')
