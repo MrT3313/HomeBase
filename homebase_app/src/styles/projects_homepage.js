@@ -1,8 +1,8 @@
 import colors from './index'
 
 const theme = {
-    backgroundColor: colors.primaryColor,
-    fontColor: colors.altFontColor,
+    backgroundColor: colors.altFontColor,
+    fontColor: colors.tertiaryColor,
 }
 
 export default theme
