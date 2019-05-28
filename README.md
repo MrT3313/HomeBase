@@ -36,9 +36,6 @@ Date Completed  | 5/26/19 | 5/26/19 | 5/27/19 | - - | 5/27/19 | N.A.
 
  - [*Current* -> FE Design_V2.2](readMe_files/imgs/HomeBase_Desktop_V2.2_5-27-19.png)
 
-### FE Current Design:
-V2.2 - SHELL: <br>
-<img src='readMe_files/imgs/HomeBase_Desktop_V2.2 5-27-19.png' height='600' width='800'>
 
 # BACK END
 - Main <br>
@@ -50,14 +47,142 @@ V2.2 - SHELL: <br>
 - Dev Dependencies <br>
 [Nodemon](https://nodemon.io/) - Server Restart onSave() <br>
 
-
 ### BE Design Links
 [Current WireFrame - https://dbdiagram.io](https://dbdiagram.io/d/5ceb10e51f6a891a6a65767e) <br>
 - [BE Design_0](readMe_files/imgs/HomeBase_DB_Design0.png)
 - [BE Design_1](readMe_files/imgs/homeBase_DB_V1.1_Design_1.png)
 
-### BE Current Design:
-<img src='/readMe_files/imgs/homeBase_DB_V1.1_Design_1.png' height='600'>
+### BE CRUD
+EXPRESS ROUTES:
+- /api/users
+    - GET / 
+    - GET /:id 
+    - Post /
+        ```
+        Accepted Shape
+        {
+            "firstName": "string", 
+            "lastName": "string",
+            "type": "string",
+            "phone": "string",
+            "address": "string"
+        }
+        ```
+    - Update /:id 
+        ```
+        Accepted SHape
+        {
+            "firstName": "string",
+            "lastName": "string",
+            "type": "string",
+            "phone": "string",
+            "address": "string"
+        }
+        ```
+    - Delete /:id 
+- /api/projects
+    - GET / 
+    - GET /:id 
+    - GET /user/:id 
+    - Post /
+        ```
+        Accepted Shape
+        {
+            "projectDescription": "string",
+            "projectTitle": "string",
+            "dueDate": "string",
+            "userID": integer
+        }
+        ```
+    - Update /:id 
+        ```
+        Accepted Shape
+        {
+            "projectDescription": "string",
+            "projectTitle": "string",
+            "dueDate": "string",
+            "userID": integer
+        }
+        ```
+    - Delete /:id 
+- /api/objectives
+    - GET / 
+    - GET /:id 
+    - GET /user/:id 
+    - Post /
+        ```
+        Accepted Shape
+        {
+            "objectiveStatus": "string",
+            "objectiveTitle": "string",
+            "userID": integer
+        }
+        ```
+    - Update /:id 
+        ```
+        Accepted Shape
+        {
+            "objectiveID": integer,
+            "objectiveStatus": "string",
+            "objectiveTitle": "string",
+            "userID": integer
+        }
+        ```
+    - Delete /:id 
+- /api/todos
+    - GET / 
+    - GET /:id 
+    - GET /user/:id 
+    - Post /
+        ```
+        Accepted Shape
+        {
+            "todoDescription": "NEW DESCRIPTION",
+            "todoTitle": "NEWLY ADDED",
+            "date": "5/19/28",
+            "userID": 1
+        }
+        ```
+    - Update /:id 
+        ```
+        Accepted Shape
+        {
+            "todoDescription": "EDIT",
+            "todoTitle": "EDITED",
+            "date": "5/19/28",
+            "userID": 1
+        }
+        ```
+    - Delete /:id 
+- /api/tasks
+    - GET / 
+    - GET /:id 
+    - GET /user/:id 
+    - Post /
+        ```
+        Accepted Shape
+        {
+            "startTime": "string",
+            "endTime": "string",
+            "type": "string",
+            "todoID": integer,
+            "objectiveID": integer
+        }
+        ```
+    - Update /:id 
+        ```
+        Accepted Shape
+        {
+            "startTime": "string",
+            "endTime": "string",
+            "type": "string",
+            "todoID": integer,
+            "objectiveID": integer
+        }
+        ```
+    - Delete /:id 
+
+
 
 
 

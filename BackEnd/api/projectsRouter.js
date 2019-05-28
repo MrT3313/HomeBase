@@ -53,7 +53,6 @@ const express = require('express')
     /*
     ACCEPTED SHAPE:
     {
-        "versionID": 1,
         "projectDescription": "THE NEWEST PROJECT EVER",
         "projectTitle": "Mr.T UPGRADED",
         "dueDate": "4/3/2918",
