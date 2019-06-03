@@ -60,11 +60,22 @@ import React, { Component } from "react"
     `;
 
 class ObjectiveRow extends Component {
+    state = {
+        numCompleted: 0
+    }
+
 
     deleteObjective = e => {
         e.preventDefault()        
         // console.log(this.props.objective.objectiveID)
         this.props.delete_objective(this.props.objective.objectiveID)
+    }
+
+    getTotal = (passedTotal) => {
+        // console.log("PASSED TOTAL MOTHER FUCKER", passedTotal)
+        this.setState({
+            numCompleted: passedTotal,
+        });
     }
 
     render() {
@@ -80,7 +91,10 @@ class ObjectiveRow extends Component {
                         </div>
                     </div>
                     <div className='objectiveRight'>
-                        <ObjectiveBoxes />
+                        <ObjectiveBoxes getTotal_Method={this.getTotal}/>
+                        <div className='goals_totals'>
+
+                        </div>
                     </div>
                 </ObjectiveRowContainer>
 

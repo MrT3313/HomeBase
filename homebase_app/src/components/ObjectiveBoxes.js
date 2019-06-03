@@ -63,6 +63,7 @@ class ObjectiveBoxes extends Component {
         e.preventDefault()
 
         this.state.isClicked_mon ? this.counter_decrement() : this.counter_increment()
+        this.props.getTotal_Method(this.state.counter)
         this.setState(prevState => ({
             ...prevState,
             isClicked_mon: !prevState.isClicked_mon,
@@ -72,6 +73,7 @@ class ObjectiveBoxes extends Component {
         e.preventDefault()
         
         this.state.isClicked_tu ? this.counter_decrement() : this.counter_increment()
+        this.props.getTotal_Method(this.state.counter)
         this.setState(prevState => ({
             ...prevState,
             isClicked_tu: !prevState.isClicked_tu,
@@ -81,6 +83,7 @@ class ObjectiveBoxes extends Component {
         e.preventDefault()
         
         this.state.isClicked_w ? this.counter_decrement() : this.counter_increment()
+        this.props.getTotal_Method(this.state.counter)
         this.setState(prevState => ({
             ...prevState,
             isClicked_w: !prevState.isClicked_w,
@@ -90,6 +93,7 @@ class ObjectiveBoxes extends Component {
         e.preventDefault()
         
         this.state.isClicked_th ? this.counter_decrement() : this.counter_increment()
+        this.props.getTotal_Method(this.state.counter)
         this.setState(prevState => ({
             ...prevState,
             isClicked_th: !prevState.isClicked_th,
@@ -99,6 +103,7 @@ class ObjectiveBoxes extends Component {
         e.preventDefault()
         
         this.state.isClicked_f ? this.counter_decrement() : this.counter_increment()
+        this.props.getTotal_Method(this.state.counter)
         this.setState(prevState => ({
             ...prevState,
             isClicked_f: !prevState.isClicked_f,
@@ -108,6 +113,7 @@ class ObjectiveBoxes extends Component {
         e.preventDefault()
         
         this.state.isClicked_s ? this.counter_decrement() : this.counter_increment()
+        this.props.getTotal_Method(this.state.counter)
         this.setState(prevState => ({
             ...prevState,
             isClicked_s: !prevState.isClicked_s,
@@ -117,6 +123,7 @@ class ObjectiveBoxes extends Component {
         e.preventDefault()
         
         this.state.isClicked_su ? this.counter_decrement() : this.counter_increment()
+        this.props.getTotal_Method(this.state.counter)
         this.setState(prevState => ({
             ...prevState,
             isClicked_su: !prevState.isClicked_su,
@@ -157,6 +164,7 @@ class ObjectiveBoxes extends Component {
                         className={`${this.state.isClicked_su} tracking trackingDay_7`}
                         onClick={this.clickHandler_su}
                     ></div>
+
                 </ObjectiveBoxesContainer>
             // </ThemeProvider>
 
