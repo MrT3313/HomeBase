@@ -50,53 +50,76 @@ class ObjectiveBoxes extends Component {
         counter: 0
     }
 
+    counter_increment = () => {
+        ++this.state.counter
+        console.log(this.state.counter)
+    }
+    counter_decrement = () => {
+        --this.state.counter
+        console.log(this.state.counter)
+    }
+
     clickHandler_mon = e => {
         e.preventDefault()
+
+        this.state.isClicked_mon ? this.counter_decrement() : this.counter_increment()
         this.setState(prevState => ({
             ...prevState,
-            isClicked_mon: !prevState.isClicked_mon
+            isClicked_mon: !prevState.isClicked_mon,
         }));
     }
     clickHandler_tu = e => {
         e.preventDefault()
+        
+        this.state.isClicked_tu ? this.counter_decrement() : this.counter_increment()
         this.setState(prevState => ({
             ...prevState,
-            isClicked_tu: !prevState.isClicked_tu
+            isClicked_tu: !prevState.isClicked_tu,
         }));
     }
     clickHandler_w = e => {
         e.preventDefault()
+        
+        this.state.isClicked_w ? this.counter_decrement() : this.counter_increment()
         this.setState(prevState => ({
             ...prevState,
-            isClicked_w: !prevState.isClicked_w
+            isClicked_w: !prevState.isClicked_w,
         }));
     }
     clickHandler_th = e => {
         e.preventDefault()
+        
+        this.state.isClicked_th ? this.counter_decrement() : this.counter_increment()
         this.setState(prevState => ({
             ...prevState,
-            isClicked_th: !prevState.isClicked_th
+            isClicked_th: !prevState.isClicked_th,
         }));
     }
     clickHandler_f = e => {
         e.preventDefault()
+        
+        this.state.isClicked_f ? this.counter_decrement() : this.counter_increment()
         this.setState(prevState => ({
             ...prevState,
-            isClicked_f: !prevState.isClicked_f
+            isClicked_f: !prevState.isClicked_f,
         }));
     }
     clickHandler_s = e => {
         e.preventDefault()
+        
+        this.state.isClicked_s ? this.counter_decrement() : this.counter_increment()
         this.setState(prevState => ({
             ...prevState,
-            isClicked_s: !prevState.isClicked_s
+            isClicked_s: !prevState.isClicked_s,
         }));
     }
     clickHandler_su = e => {
         e.preventDefault()
+        
+        this.state.isClicked_su ? this.counter_decrement() : this.counter_increment()
         this.setState(prevState => ({
             ...prevState,
-            isClicked_su: !prevState.isClicked_su
+            isClicked_su: !prevState.isClicked_su,
         }));
     }
         

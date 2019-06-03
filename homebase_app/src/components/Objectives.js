@@ -146,7 +146,7 @@ class Objectives extends Component {
                             <div className="objectivesShown">
                                 
                                 <Button 
-                                    title={'Add Objective'}
+                                    title={this.state.addNewObjective ? 'Close Add Objective Box': 'Add Objective' }
                                     onClick={this.showAddNewObjective}
                                 />
 
