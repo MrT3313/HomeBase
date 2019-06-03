@@ -8,6 +8,7 @@ import React, { Component } from "react"
     import { getUserObjectives } from '../redux/actions/a_getUserObjectives.js'
     import { add_objective } from '../redux/actions/a_addObjective.js'
 
+
 // IMPORT  STYLED COMPONENTS
     import styled from 'styled-components'
     // import { ThemeProvider } from 'styled-components'
@@ -52,6 +53,7 @@ import React, { Component } from "react"
                 transform: rotate(180deg);
             }
         }
+
         .objectives_shownContent {
             display: flex;
             flex-direction: column;
@@ -70,7 +72,8 @@ import React, { Component } from "react"
     
                 .weekOfDate {
                     text-align: center;
-                    margin-right: 15px;
+                    // margin-right: 15px;
+                    width: 200px;
                 }
             }
 
@@ -80,7 +83,7 @@ import React, { Component } from "react"
 
 class Objectives extends Component {
     state = { 
-        showObjectives: false,
+        showObjectives: true,
         
         showAddNewObjective: false,
         newObjTitle: ''
@@ -153,7 +156,7 @@ class Objectives extends Component {
                                 />
                             </div>
                             {this.state.addNewObjective &&
-                                <form onSubmit={this.click}>
+                                <form className='addObjectiveForm' onSubmit={this.click}>
                                     <input name="newObjTitle" placeholder="New Objective Title" onChange={this.onChange}/>
                                     <button 
                                         onClick={this.addObjective_submit}
@@ -165,8 +168,7 @@ class Objectives extends Component {
                             <div className="objectives_shownContent">
                                 <div className='objectiveRow_1'>
                                     <div className='weekOfDate'>
-                                        Week Of: <br/>
-                                        5/27/19 
+                                        Week Of: 6/3/19 
                                     </div>
                                     <Weekdays />
                                 </div>
@@ -196,7 +198,7 @@ export default connect(
     mapStateToProps,
     {
         getUserObjectives,
-        add_objective
+        add_objective,
     }
 )(Objectives)
 

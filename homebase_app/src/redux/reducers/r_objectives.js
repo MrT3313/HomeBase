@@ -13,6 +13,13 @@ import {
     ADD_OBJECTIVE_FAILURE,
 } from '../actions/a_addObjective'
 
+// -3- // delete objective
+import { 
+    DELETE_OBJECTIVE_START,
+    DELETE_OBJECTIVE_SUCCESS,
+    DELETE_OBJECTIVE_FAILURE,
+} from '../actions/a_deleteObjective'
+
 // INITIAL STATE
 const initialState = {
     objectives: [],
@@ -20,6 +27,7 @@ const initialState = {
 
     is_gettingUserObjectives: false,
     is_addingObjective: false,
+    is_deletingObjective: false,
 }
 
 // REDUCER
@@ -48,10 +56,10 @@ export const r_objectives = (state = initialState, action) => {
                     ...state,
 
                     is_gettingUserObjectives: false,
-                    error: 'unable to get Objectives'
+                    error: 'unable to GET objectives'
 
                 }
-        // -2- // ADDING OBJECTIVE
+        // -2- // ADD OBJECTIVE
             case ADD_OBJECTIVE_START: 
                 return {
                     ...state,
@@ -73,8 +81,31 @@ export const r_objectives = (state = initialState, action) => {
                     ...state,
 
                     is_addingObjective: false,
-                    error: 'unable to add Objectives',
+                    error: 'unable to ADD objectives',
 
+                }
+        // -3- // DELETE OBJECTIVE
+            case DELETE_OBJECTIVE_START: 
+                return {
+                    ...state,
+
+                    is_deletingObjective: true,
+                    error: ''
+                }
+            case DELETE_OBJECTIVE_SUCCESS:
+                return {
+                    ...state,
+
+                    is_deletingObjective: false,
+                    objectives: action.payload,
+                    error: ''
+                }
+            case DELETE_OBJECTIVE_FAILURE:
+                return {
+                    ...state,
+
+                    is_deletingObjective: false,
+                    error: 'unable to DELETE objective'
                 }
             // Default
             default:

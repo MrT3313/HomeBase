@@ -63,7 +63,20 @@ const express = require('express')
         DB_knexVersion('objectives')
             .insert(req.body)
                 .then( results => {
-                    res.status(201).json(results)
+                    // - V1 - //
+                        // res.status(201).json(results)
+                    
+                    // - V2 - //
+                        // IF the Delete action was successful
+                        // make a NEW DB call to get the updated list of objectives 
+                        // & send to the front end
+                        DB_knexVersion('objectives')
+                        .then( objectives => {
+                            res.status(200).json(objectives)
+                        })
+                        .catch( () => {
+                            res.status(500).json({ error: "GET api/objectives/ --> Could not get all objectives"})
+                        })
                 })
                 .catch(() => {
                     res.status(500).json({ error: `POST/ --> Could not INSERT new objective`})
@@ -91,9 +104,9 @@ const express = require('express')
         DB_knexVersion('objectives')
             .where('objectiveID', id)
             .update(updateData)
-                .then( updatedUser => {
-                    if (updatedUser) {
-                        res.status(200).json(updatedUser)
+                .then( updatedObjective => {
+                    if (updatedObjective) {
+                        res.status(200).json(updatedObjective)
                     } else {
                         res.status(404).json({ error: `PUT/:id --> objective ID ${id} not found`})
                     }
@@ -112,7 +125,16 @@ const express = require('express')
             .del()
                 .then( results => {
                     if (results) {
-                        res.status(200).json(results)
+                        // IF the Delete action was successful
+                        // make a NEW DB call to get the updated list of objectives 
+                        // & send to the front end
+                        DB_knexVersion('objectives')
+                        .then( objectives => {
+                            res.status(200).json(objectives)
+                        })
+                        .catch( () => {
+                            res.status(500).json({ error: "GET api/objectives/ --> Could not get all objectives"})
+                        })
                     } else {
                         res.status(404).json({ error: `DELETE/:id --> objectiveID ${id} not found`})
                     }

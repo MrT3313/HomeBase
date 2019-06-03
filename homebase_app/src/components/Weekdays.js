@@ -23,7 +23,11 @@ import React, { Component } from "react"
         flex-direction: row;
 
         div {
-            margin-right: 10px;
+            margin-right: 5px;
+
+            :last-child {
+                margin-right: 0;
+            }
             
         }
     `;

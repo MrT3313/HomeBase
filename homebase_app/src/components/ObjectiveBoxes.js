@@ -18,7 +18,7 @@ import React, { Component } from "react"
 // -- *** -- START CODE -- *** -- //
 
 // Styled Components
-    const ObjectiveContainer = styled.div`
+    const ObjectiveBoxesContainer = styled.div`
         display: flex;
         justify-content: space-around;
         width: 100%;
@@ -38,7 +38,7 @@ import React, { Component } from "react"
         }
     `;
 
-class Objective extends Component {
+class ObjectiveBoxes extends Component {
     state = {
         isClicked_mon: false,
         isClicked_tu: false,
@@ -104,7 +104,7 @@ class Objective extends Component {
     render() {
         return (
             // <ThemeProvider theme={theme}>
-                <ObjectiveContainer>
+                <ObjectiveBoxesContainer>
                     <div 
                         className={`${this.state.isClicked_mon} tracking trackingDay_1`}
                         // className='tracking trackingDay_1'
@@ -134,10 +134,10 @@ class Objective extends Component {
                         className={`${this.state.isClicked_su} tracking trackingDay_7`}
                         onClick={this.clickHandler_su}
                     ></div>
-                </ObjectiveContainer>
+                </ObjectiveBoxesContainer>
             // </ThemeProvider>
 
         )
     }
 }
-export default Objective
+export default ObjectiveBoxes
