@@ -48,13 +48,14 @@ import React, { Component } from "react"
                 min-width: 65px;
 
                 margin-right: 10px;
-                
-                
             }
         }
     `;
 
 class Objectives extends Component {
+    state = { 
+        showObjectives: false
+    }
 
     componentDidMount() {
         console.log('FORCED CURRENT USER', this.props.currentUserID)
@@ -64,19 +65,27 @@ class Objectives extends Component {
     render() {
         return (
                 <ObjectivesContainer>
-
-                    <div className='objectiveRow_1'>
-                        <div className='weekOfDate'>
-                            Week Of: <br/>
-                            5/27/19 
+                    {!this.state.showObjectives &&
+                        <div>
+                            HELLO :)
                         </div>
-                        <Weekdays />
-                    </div>
-                    <div className='objectiveRow_2'>
-                        {this.props.currentUserOBJECTIVES.map( objective => {
-                            return <ObjectiveRow objective={objective}/>
-                        })}
-                    </div>
+                    }
+                    {this.state.showObjectives && 
+                        <>
+                            <div className='objectiveRow_1'>
+                                <div className='weekOfDate'>
+                                    Week Of: <br/>
+                                    5/27/19 
+                                </div>
+                                <Weekdays />
+                            </div>
+                            <div className='objectiveRow_2'>
+                                {this.props.currentUserOBJECTIVES.map( objective => {
+                                    return <ObjectiveRow objective={objective}/>
+                                })}
+                            </div>
+                        </>
+                    }
 
 
 
