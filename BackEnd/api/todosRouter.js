@@ -8,7 +8,7 @@ const express = require('express')
     const router = express.Router()
 
 // - GET - //
-
+    // ALL TODOS
     router.get('/', async (req,res) => {
         console.log('todosRouter GET/')
 
@@ -20,6 +20,7 @@ const express = require('express')
                 res.status(500).json({ error: "GET api/todos/ --> Could not get all todos"})
             })
     })
+    // SINGLE TODO
     router.get('/:id', async (req,res) => {
         console.log('todosRouter GET/:id')
         const { id } = req.params
@@ -31,6 +32,21 @@ const express = require('express')
             .catch( () => {
                 res.status(500).json({error: `GET/:id --> Could not get OBJECTIVE ${id}`})
             })
+    })
+    // ALL TODOS --> SINGLE USER
+    router.get('/user/:id', async (req,res) => {
+        console.log('todosRouter GET/user/:id')
+        const { id } = req.params
+
+        DB_knexVersion('todos')
+            .where('userID', id)
+                .then( userTodos => {
+                    res.status(200).json(userTodos)
+                })
+                .catch( () => {
+                    res.status(500).json({ error: 'Could not get all of userID:${id} Todos'})
+                })
+
     })
 
 // - POST - //

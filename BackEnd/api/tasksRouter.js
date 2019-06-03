@@ -37,7 +37,13 @@ const express = require('express')
 // - POST - //
     /*
     ACCEPTED SHAPE:
-
+        {
+            "startTime": "12:12",
+            "endTime": "12:12",
+            "type": "TEST",
+            "todoID": null,
+            "objectiveID": null
+        }
     */
     router.post('/', async(req,res) => {
         DB_knexVersion('tasks')

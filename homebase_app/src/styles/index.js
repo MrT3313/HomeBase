@@ -10,6 +10,4 @@ const colors_fonts = {
     // FONTS
 }
 
-
-
 export default colors_fonts

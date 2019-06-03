@@ -11,29 +11,52 @@ import React, { Component } from "react"
     // IMPORT - STYLED COMPONENTS - INDIVIDUAL THEMES
         import theme from '../styles/footer_homepage'
 
+// ASSETS
+    import trashIcon from '../assets/TrashIcon.svg'
+    import timerIcon from '../assets/Timer.svg'
+    import checkmarkIcon from '../assets/Checkmark.svg'
+
+
 // -- *** -- START CODE -- *** -- //
 // -- *** -- START CODE -- *** -- //
 
 // Styled Components
     const ProjectContainer = styled.div`
         display: flex;
-
-        padding-left: 10px;
-        border: 1px dashed black;
-
         margin-bottom: 10px;
+
+        border: 1px solid black
+        border-radius: 5px;
+        
+        .projectContent {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
 
         .projectContent_TOP {
             display: flex;
+            flex-direction: column;
+            align-items: center;
             justify-content: center;
+
+            .dueDate, .actions {
+                display: flex;
+            }
+            .dueDate {
+                text-align: center;
+            }
         }
-    `;
+        .projectContent_BOTTOM {
+            display: flex;
+            flex-direction: row;
 
-    const Content = styled.div`
-        display: flex;
-
-        .contentTitle {
-            margin-right: 15px;
+            .contentLeft {
+                margin-right: 10px;
+            }
+            .contentRight {
+                width: 100%;
+            }
         }
     `;
 
@@ -45,44 +68,29 @@ class Project extends Component {
             <ProjectContainer>
                 <div className='projectContent'>
 
-                    <div className=''>
-
-                    </div>
-                    <div className=''>
-
-                    </div>
-
-
-
-
-
                     <div className='projectContent_TOP'>
-                        <Content className='projectDueDate'>
-                            <div className='contentTitle'>
-                                Due Date:
-                            </div>
-                            <div className='content'>
-                                {this.props.project.dueDate}
-                            </div>
-                        </Content>
+                        <div className='dueDate'>
+                            Due Date: {this.props.project.dueDate} 
+                        </div>
+                        <div className='actions'>
+                            <img src={trashIcon}/>
+                            <img src={timerIcon}/>
+                            <img src={checkmarkIcon}/>
+                        </div>
                     </div>
                     <div className="projectContent_BOTTOM">
-                        <Content className='projectTITLE'>
-                            <div className='contentTitle'>
-                            Project Title:
+                        <div className='contentLeft'>
+                            <div>Title:</div>
+                            <div>Description:</div>
+                        </div>
+                        <div className='contentRight'>
+                            <div>
+                                {this.props.project.projectTitle}
                             </div>
-                            <div className='content'>
-                            {this.props.project.projectTitle}
+                            <div>
+                                {this.props.project.projectDescription}
                             </div>
-                        </Content>
-                        <Content className='projectDESCRIPTION'>
-                            <div className='contentTitle'>
-                            Description:
-                            </div>
-                            <div className='content'>
-                            {this.props.project.projectDescription}
-                            </div>
-                        </Content>
+                        </div>
                     </div>
 
                 </div>
