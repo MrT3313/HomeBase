@@ -30,7 +30,8 @@ import React, { Component } from "react"
             justify-content: center;
             align-items: center;
 
-            min-width: 65px;
+            width: 65px;
+            padding: 10px;
             margin-right: 10px;
             border: 1px solid black;
             border-radius: 5px;

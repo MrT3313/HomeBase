@@ -20,7 +20,7 @@ const AppContainer = styled.div`
   width: 95%
   margin: 0 auto;
 
-  border: 1px solid black;
+  // border: 1px solid black;
 `;
 
 class App extends Component {

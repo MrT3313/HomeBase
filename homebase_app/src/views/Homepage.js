@@ -33,11 +33,12 @@
         .content_rowA, .content_rowB { 
             display: flex;
             flex-direction: row;
-            margin-top: 20px;
+            
         }
 
         .content_rowA {
             justify-content: center;
+            width: 100%;
         }
 
         .content_rowB {

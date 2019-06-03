@@ -27,6 +27,8 @@
         display: flex;
         justify-content: space-between;
         padding: 10px 20px;
+
+        border-radius: 10px 10px 0 0;
         
         background-color: ${props => props.theme.backgroundColor};
         color: ${props => props.theme.fontColor};
