@@ -12,9 +12,7 @@ import React, { Component } from "react"
         import theme from '../styles/footer_homepage'
 
 // ASSETS
-    import USAflag from '../assets/USAflagIcon.svg'
-    import GitHubIcon from '../assets/GitHubIcon.svg'
-    import LinkedInIcon from '../assets/LinkedInIcon.svg'
+
 
 // -- *** -- START CODE -- *** -- //
 // -- *** -- START CODE -- *** -- //
@@ -24,8 +22,6 @@ import React, { Component } from "react"
         display: flex;
         justify-content: space-around;
         width: 100%;
-
-
 
         .trackingText {
             width: 50px;
@@ -51,6 +47,7 @@ class Objective extends Component {
         isClicked_f: false,
         isClicked_s: false,
         isClicked_su: false,
+        counter: 0
     }
 
     clickHandler_mon = e => {

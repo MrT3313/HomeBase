@@ -54,8 +54,6 @@
                 width: 75%
             }
         }
-
-
     `;
 
 // COMPONENT

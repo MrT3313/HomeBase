@@ -52,12 +52,6 @@ import React, { Component } from "react"
                 
             }
         }
-
-
-
-
-
-
     `;
 
 class Objectives extends Component {
