@@ -20,6 +20,13 @@ import {
     DELETE_OBJECTIVE_FAILURE,
 } from '../actions/a_deleteObjective'
 
+// -4- // update redux store with objective current total completed 
+import {
+    CLICK_OBJECTIVE_POSITIVE_START,
+    CLICK_OBJECTIVE_POSITIVE_SUCCESS,
+    CLICK_OBJECTIVE_POSITIVE_FAILURE,
+} from '../actions/a_objectiveClick_Positive'
+
 // INITIAL STATE
 const initialState = {
     objectives: [],
@@ -28,6 +35,8 @@ const initialState = {
     is_gettingUserObjectives: false,
     is_addingObjective: false,
     is_deletingObjective: false,
+    is_updatingTotalCompleted: false
+
 }
 
 // REDUCER
@@ -108,6 +117,33 @@ export const r_objectives = (state = initialState, action) => {
                     error: 'unable to DELETE objective'
                 }
             // Default
+
+        // -4- // Update Current Total For Objective
+            case CLICK_OBJECTIVE_POSITIVE_START: 
+                return {
+                    ...state,
+
+                    is_updatingTotalCompleted: true,
+                    error: ''
+                }
+            case CLICK_OBJECTIVE_POSITIVE_SUCCESS: 
+                return {
+                    ...state,
+
+                    is_updatingTotalCompleted: false,
+                    
+
+
+                    
+                    error: ''
+                }
+            case CLICK_OBJECTIVE_POSITIVE_FAILURE:
+                return {
+                    ...state,
+
+                    is_updatingTotalCompleted: false,
+                    error: 'unable to update Redux Store with objective total'
+                }
             default:
                 return state;
     }
