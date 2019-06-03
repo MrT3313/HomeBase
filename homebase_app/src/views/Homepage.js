@@ -11,9 +11,6 @@
     import Objectives from '../components/Objectives'
     import Todos from '../components/Todos'
     import Goals from '../components/Goals'
-    import Events from '../components/Events'
-    import Calendar from '../components/Calendar'
-    
 
 
 
@@ -79,15 +76,7 @@ class Homepage extends Component {
                         <Todos theme={Todos_theme}/>
                     </div>
                     <div className='rowB_RIGHT'>
-                        Time Tracking
-                    </div>
-                </div>
-
-                <div className='content_rowC'>
-                    <div className='rowB_RIGHT'>
                         <Goals />
-                        <Events />
-                        <Calendar />
                     </div>
                 </div>
 

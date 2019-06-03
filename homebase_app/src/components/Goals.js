@@ -12,7 +12,6 @@ import React, { Component } from "react"
         // import theme from '../styles/footer_homepage'
 
 // COMPONENTS
-    import Stakes from '../components/Stakes'
 
 // ASSETS
 
@@ -49,7 +48,6 @@ class Goals extends Component {
                         <div>PLAY</div>
                     </div>
                     <div className='stakes'>
-                        <Stakes />
                     </div>
 
                 </GoalsContainer>
